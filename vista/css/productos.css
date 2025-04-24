@@ -1,0 +1,119 @@
+/* Contenedor principal */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Fondo claro para mejor contraste */
+}
+.caja {
+  width: 280px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.caja:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.imagen2 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.nombre {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  color: #333;
+}
+.precio {
+  font-size: 22px;
+  font-weight: bold;
+  color: #28a745;
+  padding: 5px 0;
+}
+.descripcion {
+  font-size: 14px;
+  color: #666;
+  padding: 0 15px 10px;
+}
+
+/* Estado del producto */
+.estado {
+  font-size: 14px;
+  font-weight: bold;
+  color: #17a2b8; /* Azul moderno */
+  padding-bottom: 10px;
+}
+
+
+.divboton {
+  padding: 10px;
+}
+.boton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s;
+}
+.boton:hover {
+  background-color: #0056b3;
+}
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a, .pagination span {
+  padding: 8px 12px;
+  margin: 0 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #007bff;
+  border: 1px solid #007bff;
+  transition: background 0.3s;
+}
+
+.pagination a:hover {
+  background: #007bff;
+  color: white;
+}
+
+.pagination .current {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contenedor {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+.sin-stock {
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo sombreado */
+  opacity: 0.7;
+}
+.boton.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

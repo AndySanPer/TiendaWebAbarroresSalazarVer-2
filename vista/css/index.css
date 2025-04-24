@@ -1,0 +1,51 @@
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+  width: 90%; /* Ajusta el ancho del carrusel */
+  max-width: 1200px; /* Establece un ancho máximo */
+  margin: 30px auto; /* Centra el carrusel */
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Contenedor de imágenes */
+.carousel-slide {
+  display: flex;
+  width: 300%; /* Cambia dinámicamente con JS */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%; /* Para que cada imagen ocupe todo el carrusel */
+  height: 500px;
+  object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+}
+
+
+/* Botones de navegación */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 50%; /* Forma de círculo */
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+/* Posicionamiento de los botones */
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Efecto hover en los botones */
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

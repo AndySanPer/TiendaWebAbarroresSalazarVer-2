@@ -1,0 +1,158 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: #005c59;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Logo con animación */
+.navbar-brand img {
+    height: 90px;
+    width: 140px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+/* Ajustar los enlaces para que no ocupen demasiado espacio */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #f0c808;
+}
+
+/* Menú desplegable mejorado */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    list-style: none;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px;
+    color: black;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+    background: #f0c808;
+    color: black;
+    border-radius: 5px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.user-info img:hover {
+    transform: scale(1.1);
+}
+
+.user-info span {
+    color: white;
+    font-weight: bold;
+}
+
+.user-info form button {
+    background: #f0c808;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.user-info form button:hover {
+    background: #c69c06;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Asegurar que todo se mantenga en una sola línea */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+/* Ajuste del carrito de compras */
+.cart-icon {
+    margin-left: auto; /* Lo empuja a la derecha sin romper el diseño */
+}
+
+.cart-icon img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-icon img:hover {
+    transform: scale(1.1);
+}
