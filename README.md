@@ -86,4 +86,4 @@ Esta versión 2.0 del proyecto se encuentra actualmente configurada para ejecuta
 ## Información Adicional
 
 Este proyecto es un desarrollo académico realizado para abordar las necesidades específicas de la Tienda Abarrotes Salazar. Durante su desarrollo, actué como desarrollador full-stack, liderando la planificación e implementación de todas las funcionalidades. Actualmente, la aplicación se encuentra en un entorno local para pruebas y desarrollo. Se espera su futura implementación en un entorno de hosting para hacerlo accesible en línea.
-Echa un vistazo a este video donde muestro el funcionamiento de la nueva versión de la página web de Abarrotes Salazar: https://www.youtube.com/watch?v=abcdef12345
+Echa un vistazo a este video donde muestro el funcionamiento de la nueva versión de la página web de Abarrotes Salazar: [https://www.youtube.com/watch?v=abcdef12345](https://youtu.be/y-COSpHfArA?si=RmjmNUxU33EUMmbv)
